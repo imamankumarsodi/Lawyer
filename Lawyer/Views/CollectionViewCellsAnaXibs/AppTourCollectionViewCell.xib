@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppTourCollectionViewCell" id="gTV-IL-0wX" customClass="AppTourCollectionViewCell" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="530"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="530"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first-screen" translatesAutoresizingMaskIntoConstraints="NO" id="ZHT-JZ-wqU">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="346"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZHT-JZ-wqU" secondAttribute="height" multiplier="367:335" id="1dS-DF-oJC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkL-mv-oig">
+                        <rect key="frame" x="30" y="351" width="319" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hkL-mv-oig" firstAttribute="top" secondItem="ZHT-JZ-wqU" secondAttribute="bottom" constant="5" id="4ME-OR-Svf"/>
+                <constraint firstItem="hkL-mv-oig" firstAttribute="trailing" secondItem="ZHT-JZ-wqU" secondAttribute="trailing" constant="-30" id="Qmd-RE-7ES"/>
+                <constraint firstItem="ZHT-JZ-wqU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Wqe-2o-UZr"/>
+                <constraint firstItem="ZHT-JZ-wqU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YhY-WM-PKk"/>
+                <constraint firstAttribute="trailing" secondItem="ZHT-JZ-wqU" secondAttribute="trailing" id="be2-Wt-P4f"/>
+                <constraint firstItem="hkL-mv-oig" firstAttribute="leading" secondItem="ZHT-JZ-wqU" secondAttribute="leading" constant="30" id="zLf-My-ae6"/>
+            </constraints>
+            <size key="customSize" width="379" height="530"/>
+            <connections>
+                <outlet property="imageView" destination="ZHT-JZ-wqU" id="NLl-N7-Buh"/>
+                <outlet property="lblDesc" destination="hkL-mv-oig" id="Bvu-tF-Hd7"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="222.32142857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="first-screen" width="367" height="334.5"/>
+    </resources>
+</document>

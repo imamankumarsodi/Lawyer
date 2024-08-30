@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterItemCollectionViewCell" id="bOM-Ub-Mwc" customClass="FilterItemCollectionViewCell" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vs3-uI-LkM">
+                        <rect key="frame" x="0.0" y="0.0" width="184" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-p1-GLM">
+                                <rect key="frame" x="15" y="0.0" width="120" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="plS-1B-olr">
+                                <rect key="frame" x="135" y="2" width="49" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="plS-1B-olr" secondAttribute="height" id="iJM-FJ-8Jt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDV-eT-KAa">
+                                <rect key="frame" x="135" y="0.0" width="49" height="49"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hAg-p1-GLM" firstAttribute="top" secondItem="vs3-uI-LkM" secondAttribute="top" id="QNf-qJ-EUe"/>
+                            <constraint firstItem="hAg-p1-GLM" firstAttribute="leading" secondItem="vs3-uI-LkM" secondAttribute="leading" constant="15" id="UoK-6O-kdd"/>
+                            <constraint firstItem="tDV-eT-KAa" firstAttribute="trailing" secondItem="plS-1B-olr" secondAttribute="trailing" id="bRo-U0-sna"/>
+                            <constraint firstItem="plS-1B-olr" firstAttribute="top" secondItem="hAg-p1-GLM" secondAttribute="top" id="baF-IX-8PY"/>
+                            <constraint firstItem="plS-1B-olr" firstAttribute="leading" secondItem="hAg-p1-GLM" secondAttribute="trailing" id="dbe-mG-Sl2"/>
+                            <constraint firstAttribute="bottom" secondItem="hAg-p1-GLM" secondAttribute="bottom" id="gmo-ms-aE3"/>
+                            <constraint firstAttribute="trailing" secondItem="plS-1B-olr" secondAttribute="trailing" id="iDZ-bM-UXJ"/>
+                            <constraint firstItem="plS-1B-olr" firstAttribute="bottom" secondItem="hAg-p1-GLM" secondAttribute="bottom" id="kXl-17-FUe"/>
+                            <constraint firstItem="tDV-eT-KAa" firstAttribute="top" secondItem="plS-1B-olr" secondAttribute="top" id="pDr-fk-TOU"/>
+                            <constraint firstItem="tDV-eT-KAa" firstAttribute="bottom" secondItem="plS-1B-olr" secondAttribute="bottom" id="sJc-mf-CNQ"/>
+                            <constraint firstItem="tDV-eT-KAa" firstAttribute="leading" secondItem="plS-1B-olr" secondAttribute="leading" id="uXw-BY-D6U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vs3-uI-LkM" secondAttribute="trailing" id="CPv-eo-zKZ"/>
+                <constraint firstAttribute="bottom" secondItem="vs3-uI-LkM" secondAttribute="bottom" id="Say-hO-6ew"/>
+                <constraint firstItem="vs3-uI-LkM" firstAttribute="leading" secondItem="bOM-Ub-Mwc" secondAttribute="leading" id="WeM-v4-0sk"/>
+                <constraint firstItem="vs3-uI-LkM" firstAttribute="top" secondItem="bOM-Ub-Mwc" secondAttribute="top" id="tAu-d4-Yfa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="c3z-ki-xGn"/>
+            <size key="customSize" width="184" height="63"/>
+            <connections>
+                <outlet property="btnSelectRef" destination="tDV-eT-KAa" id="Qwo-rn-iur"/>
+                <outlet property="imageDD" destination="plS-1B-olr" id="Xf9-Uu-O2n"/>
+                <outlet property="titleFilter" destination="hAg-p1-GLM" id="aSu-Va-oHU"/>
+                <outlet property="viewBG" destination="vs3-uI-LkM" id="V6X-tK-XhC"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="110.15625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

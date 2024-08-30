@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GSTIN_TableViewCellAndXib" rowHeight="83" id="KGk-i7-Jjw" customClass="GSTIN_TableViewCellAndXib" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3D-n1-TDz">
+                        <rect key="frame" x="30" y="5" width="260" height="73"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-6r-Qph">
+                        <rect key="frame" x="266" y="36.5" width="19" height="10.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zNQ-6r-Qph" secondAttribute="height" multiplier="19:20" id="TbA-IV-fAl"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-hE-qc5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zNQ-6r-Qph" firstAttribute="trailing" secondItem="G3D-n1-TDz" secondAttribute="trailing" constant="-5" id="04X-a0-pdi"/>
+                    <constraint firstItem="zNQ-6r-Qph" firstAttribute="centerY" secondItem="G3D-n1-TDz" secondAttribute="centerY" id="6vB-WC-K7Z"/>
+                    <constraint firstAttribute="trailing" secondItem="G3D-n1-TDz" secondAttribute="trailing" constant="30" id="7u5-hr-5zZ"/>
+                    <constraint firstAttribute="bottom" secondItem="G3D-n1-TDz" secondAttribute="bottom" constant="5" id="EdB-DF-Z8R"/>
+                    <constraint firstItem="G3D-n1-TDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="W00-QN-PH2"/>
+                    <constraint firstAttribute="bottom" secondItem="Mgr-hE-qc5" secondAttribute="bottom" id="XCq-EL-t80"/>
+                    <constraint firstItem="Mgr-hE-qc5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XKA-QA-DCG"/>
+                    <constraint firstItem="Mgr-hE-qc5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cU6-bq-71l"/>
+                    <constraint firstAttribute="trailing" secondItem="Mgr-hE-qc5" secondAttribute="trailing" id="gB4-a6-4dP"/>
+                    <constraint firstItem="G3D-n1-TDz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="qan-jN-e4h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDDSelectRef" destination="Mgr-hE-qc5" id="u0G-X8-Jky"/>
+                <outlet property="imgDD" destination="zNQ-6r-Qph" id="CTe-LB-iqW"/>
+                <outlet property="textField" destination="G3D-n1-TDz" id="8Aa-Zz-ysc"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="120.87053571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+    </resources>
+</document>

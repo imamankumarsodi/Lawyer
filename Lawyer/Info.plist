@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App Server Url</key>
+	<string>$(ALL_INDIA_LEGAL_BASE_SERVICE_URL)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Bundle_identifier</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>www.corwhite.com.AllIndiaLegal</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>REVERSED_CLIENT_ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.839638913932-v3q3ktpobunih8coq830coishs1i00kj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>CLIENT_ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>839638913932-v3q3ktpobunih8coq830coishs1i00kj.apps.googleusercontent.com</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tez</string>
+		<string>phonepe</string>
+		<string>paytmmp</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>All India Legal required Media Library Usage for upload profile picture and upload documents to provide information to lawyer</string>
+	<key>NSCameraUsageDescription</key>
+	<string>All India Legal required Camera Usage for upload profile picture and upload documents to provide information to lawyer</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>All India Legal required Microphone Usage for record and upload case related information to lawyer</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>All India Legal required Photo Library Additions Usage for upload profile picture and upload documents to provide information to lawyer</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>All India Legal required Photo Library Usage for upload profile picture and upload documents to provide information to lawyer</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-SemiboldItalic.ttf</string>
+		<string>OpenSans-Semibold.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>TypewriterKeys.ttf</string>
+		<string>ARIAL.TTF</string>
+		<string>ARIALBD 1.TTF</string>
+		<string>ARIALBD.TTF</string>
+		<string>ARIALBI 1.TTF</string>
+		<string>ARIALBI.TTF</string>
+		<string>ARIALBLACKITALIC.TTF</string>
+		<string>ArialCE.ttf</string>
+		<string>arialceb.ttf</string>
+		<string>ArialCEBoldItalic.ttf</string>
+		<string>ArialCEItalic.ttf</string>
+		<string>ArialCEMTBlack.ttf</string>
+		<string>ARIALI 1.TTF</string>
+		<string>ARIALI.TTF</string>
+		<string>ARIALLGT.TTF</string>
+		<string>ARIALLGTITL.TTF</string>
+		<string>ArialMdm.ttf</string>
+		<string>ArialMdmItl.ttf</string>
+		<string>ARIALN.TTF</string>
+		<string>ARIALNB.TTF</string>
+		<string>ARIALNBI.TTF</string>
+		<string>ARIALNI.TTF</string>
+		<string>ARIBLK.TTF</string>
+		<string>Tahoma Regular font.ttf</string>
+		<string>TAHOMA_0.TTF</string>
+		<string>TAHOMAB0.TTF</string>
+		<string>TAHOMABD.TTF</string>
+		<string>Verdana Bold.ttf</string>
+		<string>verdana.ttf</string>
+		<string>VERDANA0.TTF</string>
+		<string>verdanab.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Launch</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

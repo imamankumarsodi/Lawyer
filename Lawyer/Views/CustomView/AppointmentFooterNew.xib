@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aX4-sg-VNA" customClass="AppointmentFooterNew" customModule="Lawyer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbE-7X-KAr">
+                    <rect key="frame" x="20" y="105.5" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7eP-0L-QD2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4NQ-jj-rpi"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wbE-7X-KAr" firstAttribute="leading" secondItem="aX4-sg-VNA" secondAttribute="leading" constant="20" id="7oQ-Ip-d25"/>
+                <constraint firstAttribute="trailing" secondItem="wbE-7X-KAr" secondAttribute="trailing" constant="20" id="Geq-l1-IiG"/>
+                <constraint firstItem="wbE-7X-KAr" firstAttribute="centerY" secondItem="aX4-sg-VNA" secondAttribute="centerY" id="oBp-Nw-V7o"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnBookConsultaionRef" destination="wbE-7X-KAr" id="x4x-Ld-N2U"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-118.86160714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

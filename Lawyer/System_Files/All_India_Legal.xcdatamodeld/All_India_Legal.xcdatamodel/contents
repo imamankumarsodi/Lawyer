@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2531" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="City" representedClassName=".City" syncable="YES" codeGenerationType="class">
+        <attribute name="city_id" attributeType="String"/>
+        <attribute name="city_name" attributeType="String"/>
+        <attribute name="is_selected" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Experience" representedClassName=".Experience" syncable="YES" codeGenerationType="class">
+        <attribute name="experience_id" attributeType="String"/>
+        <attribute name="experience_name" attributeType="String"/>
+        <attribute name="is_selected" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Expertise" representedClassName=".Expertise" syncable="YES" codeGenerationType="class">
+        <attribute name="expertise_id" attributeType="String"/>
+        <attribute name="expertise_name" attributeType="String"/>
+        <attribute name="is_selected" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES" codeGenerationType="class">
+        <attribute name="is_selected" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="language_id" attributeType="String"/>
+        <attribute name="language_name" attributeType="String"/>
+    </entity>
+    <entity name="User_Data" representedClassName=".User_Data" syncable="YES" codeGenerationType="class">
+        <attribute name="coupon_code" attributeType="String"/>
+        <attribute name="device_id" attributeType="String"/>
+        <attribute name="device_type" attributeType="String"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="firebase_id" attributeType="String"/>
+        <attribute name="full_name" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="ip_address" attributeType="String"/>
+        <attribute name="mobile" attributeType="String"/>
+        <attribute name="mobile_logo" attributeType="String"/>
+        <attribute name="token" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="uuid" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+        <attribute name="web_logo" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="-54" positionY="72" width="128" height="88"/>
+        <element name="Experience" positionX="-36" positionY="81" width="128" height="88"/>
+        <element name="Expertise" positionX="-18" positionY="90" width="128" height="88"/>
+        <element name="Language" positionX="0" positionY="99" width="128" height="88"/>
+        <element name="User_Data" positionX="-63" positionY="-18" width="128" height="268"/>
+    </elements>
+</model>
